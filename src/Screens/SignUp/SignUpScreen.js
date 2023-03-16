@@ -66,7 +66,8 @@ const SignUpScreen = () => {
 const styles = StyleSheet.create({
     container:{
         alignItems:'center',
-        padding: 20,
+        paddingVertical: 40,
+    paddingHorizontal:20,
       },
   header:{
     fontSize:35,

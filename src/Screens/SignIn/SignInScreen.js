@@ -23,7 +23,7 @@ const SignInScreen = () => {
   const navigation = useNavigation();
   
   const onSignInPressed = () =>{
-    console.warn('sign in');
+    //console.warn('sign in');
     const data = {userEmail: email, userPassword: password};
     fetch('http://testapi.neowu.ca/userLogin.php?Content-Type=application/json', {
       method: 'POST',
@@ -34,8 +34,11 @@ const SignInScreen = () => {
       body: JSON.stringify(data),
     }).then(response => response.json())
     .then(data => {
-      console.log(data); // 处理API响应
-      navigation.navigate('Home');
+      if(data.message == 'not match'){
+        alert('Please enter valid email and password'); // 处理API响应
+      }else{
+        navigation.navigate('Home');
+      }
     })
     .catch(error => {
       console.error(error);
@@ -60,7 +63,8 @@ const SignInScreen = () => {
 const styles = StyleSheet.create({
   container:{
     alignItems:'center',
-    padding: 20,
+    paddingVertical: 40,
+    paddingHorizontal:20,
   },
   header:{
     fontSize:50,
