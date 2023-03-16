@@ -25,6 +25,9 @@ const styles = StyleSheet.create({
         borderRadius:0,
         marginVertical:0,
     },
+    container_disable:{
+      backgroundColor:"#666",
+    },
     text_primary:{
         color:"#fff",
         fontWeight:'bold',
@@ -32,5 +35,9 @@ const styles = StyleSheet.create({
     text_secondary:{
         color:"#333",
     },
+    text_disable:{
+      color:"#fff",
+      fontWeight:'bold',
+  },
   });
 export default CustomButton

@@ -4,7 +4,7 @@ import React from 'react'
 const HomeScreen = () => {
   return (
     <View>
-      <Text style={{fontSize:30,alignSelf:'center'}}>Hi, welcome to Authentication test page</Text>
+      <Text style={{fontSize:80,alignSelf:'center'}}>Hi, thanks for login, welcome to Authentication test page</Text>
     </View>
   )
 }
