@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
-
+import HeartSVG from '../HeartSVG/HeartSVG';
 const ProductDetail = ({ image, name, rating, city, price,description,onPress }) => {
     return (
         <View style={styles.container}>
@@ -28,7 +28,7 @@ const ProductDetail = ({ image, name, rating, city, price,description,onPress })
                 <Text style={styles.buttonText}>Booking Now | {price}</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.heart}>
-                <Image source={require('../../../assets/images/like.png')} style={styles.heartIcon} />
+                <HeartSVG />
             </TouchableOpacity>
         </View>
     </View>
@@ -90,7 +90,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         paddingVertical: 20,
-        paddingHorizontal: 15,
         borderTopWidth: 1,
         borderTopColor: '#ddd',
         backgroundColor: '#fff',
@@ -108,10 +107,6 @@ const styles = StyleSheet.create({
     },
     heart: {
         padding: 10,
-    },
-    heartIcon: {
-        width: 30,
-        height: 30,
     },
 });
 
