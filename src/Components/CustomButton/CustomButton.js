@@ -11,22 +11,23 @@ const CustomButton = ({onPress,text,type}) => {
 const styles = StyleSheet.create({
     container:{
         width:'70%',
-        padding:15,
-        marginVertical:15,
+        padding:12,
+        marginVertical:20,
         alignItems:'center',
-        borderRadius:10,
+        borderRadius:20,
+        width:"100%"
     },
     container_primary:{
-        backgroundColor:"#3b7171",
+        backgroundColor:"#008fa0",
     },
     container_secondary:{
-        backgroundColor:"#eee",
+        backgroundColor:"#fff",
         padding:0,
         borderRadius:0,
         marginVertical:0,
     },
     container_disable:{
-      backgroundColor:"#666",
+      backgroundColor:"#008fa0",
     },
     text_primary:{
         color:"#fff",
